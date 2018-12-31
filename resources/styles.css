@@ -1,3 +1,29 @@
+.cdItem {
+  x: 20;
+  font-family: "System-Regular";
+  fill: "white";
+}
+
+#cdHeader {
+  font-size: 30;
+  y: 50;
+}
+
+#cdTimer {
+  y: 180;
+  font-size: 100;
+}
+
+#cdText {
+  y: 220;
+  font-size: 20;
+}
+
+/* #cdFooter {
+  y: 90%;
+  font-size: 20px;
+} */
+
 .tile-list-item {
     height: 40;
   }

@@ -1,4 +1,15 @@
 <svg>
+  <svg id="countdownScreen" display="none">
+    <text id="cdHeader" class="cdItem">
+      Bhraamari
+    </text>
+    <text id="cdTimer" class="cdItem">
+      0:00
+    </text>
+    <text id="cdText" class="cdItem">
+      time
+    </text>
+  </svg>
   <svg id="pranayamListScreen" display="none">
     <use href="#tile-list" id="tile-3" x="5">
       <use href="#tile-list-header" class="tile-list-header">
@@ -8,13 +19,13 @@
         <text>1. Bhastrika - 1 min</text>
       </use>
       <use href="#tile-list-item" id="tile-2" class="tile-list-item">
-        <text>2. Kapaal Bhaati - 3 min</text>
+        <text>2. KapaalBhaati - 3 min</text>
       </use>
       <use href="#tile-list-item" id="tile-3" class="tile-list-item">
         <text>3. Baahya - 1 min</text>
       </use>
       <use href="#tile-list-item" id="tile-4" class="tile-list-item">
-        <text>4. Anulom Vilom - 5 min</text>
+        <text>4. AnulomVilom - 5 min</text>
       </use>
       <use href="#tile-list-item" id="tile-5" class="tile-list-item">
         <text>5. Bharaamari - 1 min</text>
@@ -31,8 +42,6 @@
       </use>
     </use>
   </svg>
-  <svg id="countdownScreen" display="none">
-  </svg>
   <svg id="homeScreen">
     <use id="mixedtext" href="#mixed-text-left-mid" height="100%" fill="fb-yellow">
       <set href="#header/text" attributeName="text-buffer" to="Daily Yoga"/>
@@ -40,17 +49,14 @@
           to="15 minutes Pranayam package for healthier you."/>
     </use>
   </svg>
-
-  <use id="btn-tr" href="#combo-button-upper-right" fill="fb-red">
+  <use id="btn-tr" href="#combo-button-upper-right" fill="fb-red" visibility="visible">
       <set href="combo-button-icon" attributeName="href" to="list.png"/>
       <set href="combo-button-icon-press" attributeName="href" to="list.png"/>
       <set href="combo-button-stroke" attributeName="display" to="inline"/>
     </use>
-
-    <use id="btn-br" href="#combo-button-lower-right" fill="fb-peach">
+  <use id="btn-br" href="#combo-button-lower-right" fill="fb-peach" visibility="visible">
       <set href="combo-button-icon" attributeName="href" to="play.png"/>
       <set href="combo-button-icon-press" attributeName="href" to="play.png"/>
       <set href="combo-button-stroke" attributeName="display" to="inline"/>
     </use>
-    
 </svg>

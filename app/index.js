@@ -1,4 +1,5 @@
 import document from "document";
+import { vibration } from "haptics";
 
 let homeScreen = document.getElementById("homeScreen");
 let pranayamListScreen = document.getElementById("pranayamListScreen");
@@ -15,7 +16,6 @@ function hideAll() {
 }
 
 function showHomeScreen() {
-  console.log("Show home screen");
   hideAll();
   listButton.style.visibility = "visible";
   playButton.style.visibility = "visible";
@@ -23,15 +23,14 @@ function showHomeScreen() {
 }
 
 function showPranayamListScreen() {
-  console.log("Show list screen");
   hideAll();
   pranayamListScreen.style.display = "inline";
 }
 
 function showCountdownScreen() {
-  console.log("Show countdown screen");
   hideAll();
   countdownScreen.style.display = "inline";
+  startCountdown();
 }
 
 document.onkeypress = function(evt) {
@@ -55,3 +54,41 @@ listButton.onactivate = function(evt) {
 playButton.onactivate = function(evt) {
   showCountdownScreen();
 };
+
+startCountdown();
+
+function getSecondsInMinutes(seconds) {
+  var date = new Date(null);
+  date.setSeconds(seconds);
+  return date.toISOString().substr(14, 5);
+}
+
+function startCountdown(i = 0) {
+  var prNameList = ['Bhastrika','KapaalBhaati','Baahya','AnulomVilom','Bharaamari','Udgeet','Pranav'];
+  var prTimeList = [1,3,1,5,1,1,1];
+  var header = document.getElementById("cdHeader");
+  var timer = document.getElementById("cdTimer");
+  if (i == prNameList.length) {
+    showSummary();
+    return;
+  }
+  header.text = prNameList[i];
+  var countdown = prTimeList[i] * 60;
+  var timerSetInterval = setInterval(() => {
+    timer.text = getSecondsInMinutes(countdown);
+    if (!countdown--) {
+      vibration.start("ring");
+      setTimeout(() => {
+        vibration.stop();
+        startCountdown(i+1);
+      }, 1000);
+      clearInterval(timerSetInterval);
+    }
+  }, 1000);
+}
+
+function showSummary() {
+  document.getElementById("cdHeader").text = 'Relax';
+  document.getElementById("cdTimer").text = 'Done!';
+  document.getElementById("cdText").text = '';
+}
