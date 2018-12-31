@@ -1,0 +1,28 @@
+.tile-list-item {
+    height: 40;
+  }
+
+  .tile-list-header {
+    height: 40;
+  }
+
+  .tile-list-header text {
+    font-size: 30;
+    font-family: System-Regular;
+    fill: "cyan";
+    font-weight: bold;
+  }
+    
+  .tile-list-item text {
+    font-size: 20;
+    font-family: System-Regular;
+    fill: "white";
+  }
+  
+  .tile-list-footer textarea {
+    height: 100;
+    font-size: 20;
+    font-family: System-Regular;
+    fill: "cyan";
+  }
+  
