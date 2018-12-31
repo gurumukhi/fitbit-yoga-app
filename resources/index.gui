@@ -32,25 +32,25 @@
     </use>
   </svg>
   <svg id="countdownScreen" display="none">
-    
   </svg>
   <svg id="homeScreen">
-    <!-- TOP RIGHT -->
-    <use id="btn-tr" href="#combo-button-upper-right" fill="fb-red">
-      <set href="combo-button-icon" attributeName="href" to="list.png"/>
-      <set href="combo-button-icon-press" attributeName="href" to="list.png"/>
-      <set href="combo-button-stroke" attributeName="display" to="inline"/>
-    </use>
-    <!-- BOTTOM RIGHT -->
-    <use id="btn-br" href="#combo-button-lower-right" fill="fb-peach">
-      <set href="combo-button-icon" attributeName="href" to="play.png"/>
-      <set href="combo-button-icon-press" attributeName="href" to="play.png"/>
-      <set href="combo-button-stroke" attributeName="display" to="inline"/>
-    </use>
     <use id="mixedtext" href="#mixed-text-left-mid" height="100%" fill="fb-yellow">
       <set href="#header/text" attributeName="text-buffer" to="Daily Yoga"/>
       <set href="#copy/text" attributeName="text-buffer"
           to="15 minutes Pranayam package for healthier you."/>
     </use>
   </svg>
+
+  <use id="btn-tr" href="#combo-button-upper-right" fill="fb-red">
+      <set href="combo-button-icon" attributeName="href" to="list.png"/>
+      <set href="combo-button-icon-press" attributeName="href" to="list.png"/>
+      <set href="combo-button-stroke" attributeName="display" to="inline"/>
+    </use>
+
+    <use id="btn-br" href="#combo-button-lower-right" fill="fb-peach">
+      <set href="combo-button-icon" attributeName="href" to="play.png"/>
+      <set href="combo-button-icon-press" attributeName="href" to="play.png"/>
+      <set href="combo-button-stroke" attributeName="display" to="inline"/>
+    </use>
+    
 </svg>

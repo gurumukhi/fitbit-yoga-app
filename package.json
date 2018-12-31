@@ -1,5 +1,5 @@
 {
-  "name": "yoga1",
+  "name": "daily-yoga-pranayam",
   "version": "0.1.0",
   "private": true,
   "license": "UNLICENSED",
@@ -10,7 +10,7 @@
   "fitbit": {
     "appUUID": "be88da0c-7b0f-4d7c-bf66-ec7a3f535ecf",
     "appType": "app",
-    "appDisplayName": "Yoga 1",
+    "appDisplayName": "Daily Yoga Pranayam",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
     "requestedPermissions": [],
