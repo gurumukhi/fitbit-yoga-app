@@ -55,8 +55,6 @@ playButton.onactivate = function(evt) {
   showCountdownScreen();
 };
 
-startCountdown();
-
 function getSecondsInMinutes(seconds) {
   var date = new Date(null);
   date.setSeconds(seconds);
@@ -75,6 +73,7 @@ function startCountdown(i = 0) {
   header.text = prNameList[i];
   var countdown = prTimeList[i] * 60;
   var timerSetInterval = setInterval(() => {
+    // console.log(i);
     timer.text = getSecondsInMinutes(countdown);
     if (!countdown--) {
       vibration.start("ring");
