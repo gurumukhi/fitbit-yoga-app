@@ -10,7 +10,7 @@
   "fitbit": {
     "appUUID": "be88da0c-7b0f-4d7c-bf66-ec7a3f535ecf",
     "appType": "app",
-    "appDisplayName": "Daily Yoga Pranayam",
+    "appDisplayName": "Yoga",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
     "requestedPermissions": [],

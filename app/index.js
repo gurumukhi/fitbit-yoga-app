@@ -6,6 +6,7 @@ let pranayamListScreen = document.getElementById("pranayamListScreen");
 let countdownScreen = document.getElementById("countdownScreen");
 let listButton = document.getElementById("btn-tr");
 let playButton = document.getElementById("btn-br");
+let timerSetInterval = null;
 
 function hideAll() {
   listButton.style.visibility = "hidden";
@@ -62,8 +63,13 @@ function getSecondsInMinutes(seconds) {
 }
 
 function startCountdown(i = 0) {
-  var prNameList = ['Bhastrika','KapaalBhaati','Baahya','AnulomVilom','Bharaamari','Udgeet','Pranav'];
-  var prTimeList = [1,3,1,5,1,1,1];
+  if (timerSetInterval) {
+    clearInterval(timerSetInterval);
+  }
+  // var prNameList = ['Bhastrika','KapaalBhaati','Baahya','AnulomVilom','Bharaamari','Udgeet','Pranav'];
+  // var prTimeList = [1,3,1,5,1,1,1];
+  var prNameList = ['Bhastrika','KapaalBhaati','Baahya'];
+  var prTimeList = [0.5,0.5,0.5];
   var header = document.getElementById("cdHeader");
   var timer = document.getElementById("cdTimer");
   if (i == prNameList.length) {
@@ -72,8 +78,8 @@ function startCountdown(i = 0) {
   }
   header.text = prNameList[i];
   var countdown = prTimeList[i] * 60;
-  var timerSetInterval = setInterval(() => {
-    // console.log(i);
+  timer.text = getSecondsInMinutes(countdown--);
+  timerSetInterval = setInterval(() => {
     timer.text = getSecondsInMinutes(countdown);
     if (!countdown--) {
       vibration.start("ring");

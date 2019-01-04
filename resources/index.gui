@@ -4,7 +4,7 @@
       Bhraamari
     </text>
     <text id="cdTimer" class="cdItem">
-      0:00
+      --:--
     </text>
     <text id="cdText" class="cdItem">
       time
@@ -37,8 +37,8 @@
         <text>7. Pranav - 1 min</text>
       </use>
       <use href="#tile-list-footer" class="tile-list-footer">
-        <textarea>Learn or get more info at https://gurumukhi.wordpress.com
-        </textarea>
+        <textarea>
+        Learn or get more info at https://gurumukhi.wordpress.com</textarea>
       </use>
     </use>
   </svg>

@@ -7,6 +7,7 @@
 #cdHeader {
   font-size: 30;
   y: 50;
+  fill: "cyan";
 }
 
 #cdTimer {
@@ -17,12 +18,8 @@
 #cdText {
   y: 220;
   font-size: 20;
+  fill: "red";
 }
-
-/* #cdFooter {
-  y: 90%;
-  font-size: 20px;
-} */
 
 .tile-list-item {
     height: 40;
@@ -46,9 +43,7 @@
   }
   
   .tile-list-footer textarea {
-    height: 100;
     font-size: 20;
     font-family: System-Regular;
     fill: "cyan";
   }
-  
