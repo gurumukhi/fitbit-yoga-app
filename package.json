@@ -1,28 +1,22 @@
 {
-  "name": "daily-yoga-pranayam",
-  "version": "0.1.0",
-  "private": true,
-  "license": "UNLICENSED",
-  "devDependencies": {
-    "@fitbit/sdk": "~3.0.0",
-    "@fitbit/sdk-cli": "^1.5.0"
-  },
   "fitbit": {
-    "appUUID": "be88da0c-7b0f-4d7c-bf66-ec7a3f535ecf",
+    "appUUID": "1623658a-d9d6-405e-a09d-70e4fc0c5419",
     "appType": "app",
     "appDisplayName": "Yoga",
     "iconFile": "resources/icon.png",
-    "wipeColor": "#ffffff",
+    "wipeColor": "#607d8b",
     "requestedPermissions": [],
     "buildTargets": [
       "higgs",
       "meson"
     ],
-    "i18n": {},
-    "defaultLanguage": "en-US"
+    "i18n": {
+      "en": {
+        "name": "Yoga"
+      }
+    }
   },
-  "scripts": {
-    "build": "fitbit-build",
-    "debug": "fitbit"
+  "devDependencies": {
+    "@fitbit/sdk": "~3.0.0"
   }
 }
