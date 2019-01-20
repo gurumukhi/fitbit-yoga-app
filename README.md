@@ -4,4 +4,4 @@ Fitbit Yoga App
 
 You can expect new update soon with different levels where you will have an option to choose different packages based on your experience.
 
-Link to download the app from Fitbit's Gallery App Manager : https://gam.fitbit.com/gallery/app/1623658a-d9d6-405e-a09d-70e4fc0c5419\
+Link to download the app from Fitbit's Gallery App Manager : https://gam.fitbit.com/gallery/app/1623658a-d9d6-405e-a09d-70e4fc0c5419
