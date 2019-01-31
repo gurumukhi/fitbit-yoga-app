@@ -66,10 +66,10 @@ function startCountdown(i = 0) {
   if (timerSetInterval) {
     clearInterval(timerSetInterval);
   }
-  // var prNameList = ['Bhastrika','KapaalBhaati','Baahya','AnulomVilom','Bharaamari','Udgeet','Pranav'];
-  // var prTimeList = [1,3,1,5,1,1,1];
-  var prNameList = ['Bhastrika','KapaalBhaati','Baahya'];
-  var prTimeList = [0.5,0.5,0.5];
+  var prNameList = ['Bhastrika','KapaalBhaati','Baahya','AnulomVilom','Bharaamari','Udgeet','Pranav'];
+  var prTimeList = [1,3,1,5,1,1,1];
+  // var prNameList = ['Bhastrika','KapaalBhaati','Baahya'];
+  // var prTimeList = [0.5,0.5,0.5];
   var header = document.getElementById("cdHeader");
   var timer = document.getElementById("cdTimer");
   if (i == prNameList.length) {
