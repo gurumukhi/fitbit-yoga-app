@@ -1,12 +1,30 @@
 <svg>
+
+  <defs>
+    <symbol id="demo">
+      <g id="demogroup" transform="translate(0%,0%)">
+        <!-- <circle cx="50%" cy="50%" r="50" fill="red" /> -->
+        <!-- <animate attributeName="opacity" begin="enable"
+            from="1" to="0" dur="3" final="restore" /> -->
+<!--         <rect fill="silver" height="100%" width="100%" /> -->
+        <animateTransform attributeType="translate" begin="enable"
+            from="0%,0%" to="100%,0%" dur="2" final="freeze" id="changeit" />
+      </g>
+    </symbol>
+  </defs>
+  <svg width="100%" height="100%">
+    <use id="demoinstance" href="#demo" width="100%" height="100%" />
+  </svg>
+
   <svg id="countdownScreen" display="none">
+<!--     <rect fill="green" id="rect" height="100%" width="100%" /> -->
     <text id="cdHeader" class="cdItem">
       Bhraamari
     </text>
     <text id="cdTimer" class="cdItem">
       --:--
     </text>
-    <text id="cdText" class="cdItem">
+    <text id="cdText" class="cdItem" text-length="12">
       time
     </text>
   </svg>
@@ -43,18 +61,18 @@
     </use>
   </svg>
   <svg id="homeScreen">
-    <use id="mixedtext" href="#mixed-text-left-mid" height="100%" fill="fb-yellow">
+    <use id="mixedtext" href="#mixed-text-left-mid" height="95%" fill="fb-yellow">
       <set href="#header/text" attributeName="text-buffer" to="Daily Yoga"/>
       <set href="#copy/text" attributeName="text-buffer"
           to="15 minutes Pranayam package for healthier you."/>
     </use>
   </svg>
-  <use id="btn-tr" href="#combo-button-upper-right" fill="fb-red" visibility="visible">
+  <use id="btn-tr" href="#combo-button-upper-right" fill="fb-cyan" visibility="visible">
       <set href="combo-button-icon" attributeName="href" to="list.png"/>
       <set href="combo-button-icon-press" attributeName="href" to="list.png"/>
       <set href="combo-button-stroke" attributeName="display" to="inline"/>
     </use>
-  <use id="btn-br" href="#combo-button-lower-right" fill="fb-peach" visibility="visible">
+  <use id="btn-br" href="#combo-button-lower-right" fill="fb-red" visibility="visible">
       <set href="combo-button-icon" attributeName="href" to="play.png"/>
       <set href="combo-button-icon-press" attributeName="href" to="play.png"/>
       <set href="combo-button-stroke" attributeName="display" to="inline"/>
