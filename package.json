@@ -18,5 +18,11 @@
   },
   "devDependencies": {
     "@fitbit/sdk": "~3.0.0"
+  },
+  "dependencies": {
+    "fitbit-google-analytics": "^1.2.0"
+  },
+  "scripts": {
+    "build": "fitbit-build"
   }
 }

@@ -1,7 +1,12 @@
 import document from "document";
 import { vibration } from "haptics";
-// Disable app timeout
 import { me } from "appbit";
+import analytics from "fitbit-google-analytics/app"
+import secret from "secret"
+
+analytics.configure({
+  tracking_id: secret.analyticsTrackingId
+})
 
 if (me.appTimeoutEnabled) {
  console.log("Timeout is enabled");
@@ -29,15 +34,27 @@ function showHomeScreen() {
   listButton.style.visibility = "visible";
   playButton.style.visibility = "visible";
   homeScreen.style.display = "inline";
+  analytics.send({
+    hit_type: "screenview",
+    screen_name: "Home View"
+  });
 }
 
 function showPranayamListScreen() {
   hideAll();
   pranayamListScreen.style.display = "inline";
+  analytics.send({
+    hit_type: "screenview",
+    screen_name: "List View"
+  });
 }
 
 function showCountdownScreen() {
   hideAll();
+  analytics.send({
+    hit_type: "screenview",
+    screen_name: "Countdown View"
+  });
   me.appTimeoutEnabled = false; // Disable timeout
 // if (!me.appTimeoutEnabled) {
  console.log("Timeout is enabled now?" + me.appTimeoutEnabled);
@@ -138,4 +155,10 @@ function showSummary() {
   document.getElementById("cdHeader").text = 'Relax';
   document.getElementById("cdTimer").text = 'Done!';
   document.getElementById("cdText").text = '';
+  analytics.send({
+    hit_type: "event",
+    event_category: "Display",
+    event_action: "Tap",
+    event_label: "ShowingSummary"
+  })
 }

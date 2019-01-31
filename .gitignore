@@ -2,3 +2,4 @@ build/
 node_modules
 *.fba
 .DS_Store
+secret.js
